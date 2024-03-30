@@ -85,6 +85,7 @@ main {
   border-radius: 10px;
   letter-spacing: 1px;
   color: white;
+  text-decoration: none;
 }
 .blank-div {
   height: 180px;
