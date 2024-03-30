@@ -114,6 +114,7 @@ main {
   .install-button {
     font-size: 32px;
     width: 100%;
+    padding: 16px;
   }
   .blank-div {
     height: 135px;
