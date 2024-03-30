@@ -66,7 +66,7 @@ const Hero = () => {
       </div>
       <div className="blank-div"></div>
       <div className="button-wrapper">
-        <a className="install-button" href="https://refer9.com/m/7e5gis">Install Now</a>
+        <a className="install-button" href="https://refer9.com/m/8iat9i">Install Now</a>
       </div>
     </main>
   );
