@@ -1,6 +1,6 @@
 import React from "react";
 import "./hero.css";
-import HeroImg from "../assets/Bg.jpg.jpg";
+import HeroImg from "../assets/teen_pati.jpg";
 import Container from "react-bootstrap/Container";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
@@ -14,13 +14,15 @@ import { GrSecure } from "react-icons/gr";
 const Hero = () => {
   return (
     <main>
-      <img src={HeroImg} alt="hero_image" />
+      <img src={HeroImg} className="heroImage" alt="hero_image" />
       <div className="hero_text">
-        <h1>Play Games Every Day To Win ₹ 99,999</h1>
+        <div className="container">
+          <h1 className="hero-heading">Play Games Every Day To Win ₹ 99,999</h1>
+        </div>
       </div>
       <div className="advantage_box">
-        <h2>Six Advantages</h2>
-        <Container>
+        <div className="adv-container">
+          <h2 className="advantage-heading">Six Advantages</h2>
           <Row className="adv_row_box">
             <Col className="adv_box">
               <FiUsers className="icon" />
@@ -37,8 +39,6 @@ const Hero = () => {
               <h3 className="title">Various Games</h3>
               <p>TeenPatti,Rummy..</p>
             </Col>
-          </Row>
-          <Row className="adv_row_box">
             <Col className="adv_box">
               <BiMoneyWithdraw className="icon" />
               <h3 className="title">Fast Withdrawal</h3>
@@ -55,7 +55,7 @@ const Hero = () => {
               <p>Play anytime anywhere</p>
             </Col>
           </Row>
-        </Container>
+        </div>
       </div>
       <div className="notice">
         <span>
@@ -63,6 +63,10 @@ const Hero = () => {
           old.Violating our terms of service may result in your account being
           restricted
         </span>
+      </div>
+      <div className="blank-div"></div>
+      <div className="button-wrapper">
+        <a className="install-button">Install Now</a>
       </div>
     </main>
   );
